@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+<body class="sub_page">
+{% block service_slider %}
+    <div class="container">
+        <div class="custom_nav2">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="d-flex  flex-column flex-lg-row align-items-center">
+                        <ul class="navbar-nav  ">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="/about">About </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/service">Services </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/contact">Contact Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/login">Login</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                            <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>{% endblock %}
+<!-- service section -->
+{% block service_section %}
+    <section class="service_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Our Services
+                </h2>
+            </div>
+            <div class="service_container">
+                <div class="box">
+                    <img src="{% static 'images/s-1.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        CROSSFIT TRAINING
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://www.crossfit.com">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            CROSSFIT TRAINING
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-2.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        FITNESS
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://fit.uz/clubs/85-ideal-fitness">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            FITNESS
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-3.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        DYNAMIC STRENGTH TRAINING
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://fitbod.me/blog/dynamic-strength-training/">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            DYNAMIC STRENGTH TRAINING
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-4.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        HEALTH
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://www.health.com">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            HEALTH
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-5.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        WORKOUT
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://www.muscleandstrength.com/workout-routines">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            WORKOUT
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-6.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        STRATEGIES
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://creatitive.com/marketing-strategies-for-gyms/">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            STRATEGIES
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'added.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        ADDED
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://creatitive.com/marketing-strategies-for-gyms/">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            ADDED
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>{% endblock %}
+<!-- end service section -->
+{#{% block service_section %}{% endblock %}#}
+
+
+</body>

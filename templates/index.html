@@ -1,0 +1,550 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- slider section -->
+{% block index_slider %}
+    <section class=" slider_section position-relative">
+
+        <div class="slider_container">
+            {#            {% if searcher %}#}
+            {#                {% if q in '/about'%}#}
+            {#                    <h3> Related to {{ q }} </h3>#}
+            {#                {% else %}#}
+            {#                    <h3> Latest searcher </h3>#}
+            {#                {% endif %}#}
+            {#            {% else %}#}
+            {#                <center>There is nothing!</center>#}
+            {#            {% endif %}#}
+
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 offset-md-6 offset-md-5">
+                                    <div class="detail-box">
+                                        <h2>
+                                            Get Your Body
+                                        </h2>
+                                        <h1>
+                                            Fitness Here
+                                        </h1>
+                                        <p>
+                                            Fitness GYM refers to a fitness facility or gym that offers a range of
+                                            exercise equipment, classes, and programs aimed at improving physical
+                                            fitness and overall health. It is a place where individuals can engage in
+                                            various workouts, strength training, cardiovascular exercises, group fitness
+                                            classes, and receive professional guidance from fitness trainers.
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="https://www.everydayhealth.com/fitness/guide/" class="btn-1">
+                                                Read More
+                                            </a>
+                                            <a href="https://www.healthline.com/health/fitness-exercise/10-best-exercises-everyday"
+                                               class="btn-2">
+                                                Exercises
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 offset-md-6 offset-md-5">
+                                    <div class="detail-box">
+                                        <h2>
+                                            Get Your Body
+                                        </h2>
+                                        <h1>
+                                            Fitness Here
+                                        </h1>
+                                        <p>
+                                            Fitness GYMs often provide a diverse range of equipment such as treadmills,
+                                            elliptical machines, weightlifting machines, free weights, and more. Some
+                                            fitness GYMs may also offer additional amenities like swimming pools, sauna,
+                                            steam rooms, group exercise studios, personal training services, and
+                                            nutrition counseling.
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="https://www.everydayhealth.com/fitness/guide/" class="btn-1">
+                                                Read More
+                                            </a>
+                                            <a href="https://www.healthline.com/health/fitness-exercise/10-best-exercises-everyday"
+                                               class="btn-2">
+                                                Exercises
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item ">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-7 offset-md-6 offset-md-5">
+                                    <div class="detail-box">
+                                        <h2>
+                                            Get Your Body
+                                        </h2>
+                                        <h1>
+                                            Fitness Here
+                                        </h1>
+                                        <p>
+                                            These establishments cater to individuals with different fitness goals,
+                                            whether it's weight loss, muscle building, improving cardiovascular health,
+                                            or overall well-being. Fitness GYMs create an environment that promotes
+                                            physical activity, encourages regular exercise, and supports individuals in
+                                            achieving their fitness goals.
+                                        </p>
+                                        <div class="btn-box">
+                                            <a href="https://www.everydayhealth.com/fitness/guide/" class="btn-1">
+                                                Read More
+                                            </a>
+                                            <a href="https://www.healthline.com/health/fitness-exercise/10-best-exercises-everyday"
+                                               class="btn-2">
+                                                Exercises
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>{% endblock %}
+<!-- end slider section -->
+
+
+<!-- about section -->
+{% block index_about %}
+    <section class="about_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    About MIR.GYM
+                </h2>
+            </div>
+            <div class="box">
+                <div class="img-box">
+                    <img src="{% static 'images/about-img.png' %}" alt="">
+                </div>
+                <div class="detail-box">
+                    <p>
+                        A gym, also known as a fitness center or health club, is a facility that provides various
+                        resources
+                        and equipment for physical exercise, fitness training, and recreational activities. Gyms are
+                        designed to cater to individuals seeking to improve their overall health, physical fitness, and
+                        well-being.
+                    </p>
+                    <a href="https://www.everydayhealth.com/fitness/guide/">
+                        Read More
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>{% endblock %}
+<!-- end about section -->
+
+
+<!-- service section -->
+{% block index_service %}
+    <section class="service_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Our Services
+                </h2>
+            </div>
+            <div class="service_container">
+                <div class="box">
+                    <img src="{% static 'images/s-1.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        CROSSFIT TRAINING
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://www.crossfit.com">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            CROSSFIT TRAINING
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-2.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        FITNESS
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://fit.uz/clubs/85-ideal-fitness">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            FITNESS
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-3.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        DYNAMIC STRENGTH TRAINING
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://fitbod.me/blog/dynamic-strength-training/">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            DYNAMIC STRENGTH TRAINING
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-4.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        HEALTH
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://www.health.com">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            HEALTH
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-5.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        WORKOUT
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://www.muscleandstrength.com/workout-routines">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            WORKOUT
+                        </h6>
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="{% static 'images/s-6.jpg' %}" alt="">
+                    <h6 class="visible_heading">
+                        STRATEGIES
+                    </h6>
+                    <div class="link_box">
+                        <a href="https://creatitive.com/marketing-strategies-for-gyms/">
+                            <img src="{% static 'images/link.png' %}" alt="">
+                        </a>
+                        <h6>
+                            STRATEGIES
+                        </h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>{% endblock %}
+<!-- end service section -->
+
+
+<!-- Us section -->
+{% block index_us %}
+    <section class="us_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Why Choose Us
+                </h2>
+            </div>
+            <div class="us_container">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="{% static 'images/u-1.png' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            QUALITY EQUIPMENT
+                        </h5>
+                        <p>
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-box">
+                        <img src="{% static 'images/u-2.png' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            HEALTHY NUTRITION PLAN
+                        </h5>
+                        <p>
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-box">
+                        <img src="{% static 'images/u-3.png' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            SHOWER SERVICE
+                        </h5>
+                        <p>
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-box">
+                        <img src="{% static 'images/u-4.png' %}" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            UNIQUE TO YOUR NEEDS
+                        </h5>
+                        <p>
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>{% endblock %}
+<!-- end us section -->
+
+
+<!-- client section -->
+{% block index_client %}
+    <section class="client_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    What Says Our Customers
+                </h2>
+            </div>
+            <div id="carouselExample2Indicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExample2Indicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExample2Indicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExample2Indicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="{% static 'images/client.png' %}" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    UZBEK
+                                </h5>
+                                <p>
+                                    this platform has given us great opportunities, words cannot describe it, many
+                                    thanks to
+                                    Mirzokirov Mirsiddiq, who created the Backend part of this site
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="{% static 'images/client.png' %}" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Consectetur
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="box">
+                            <div class="img-box">
+                                <img src="{% static 'images/client.png' %}" alt="">
+                            </div>
+                            <div class="detail-box">
+                                <h5>
+                                    Consectetur
+                                </h5>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                    incididunt ut labore et
+                                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section> {% endblock %}
+<!-- end client section -->
+
+
+<!-- result section -->
+{% block index_result %}
+    <section class="result_section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 px-0">
+                    <div class="img-box">
+                        <img src="{% static 'images/result-img.jpg' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="detail-box">
+                        <h2>
+                            BUILT TO BRING <br>
+                            BEST RESULTS
+                        </h2>
+                        <p>
+                            "BUILT TO BRING BEST RESULTS" is a phrase that emphasizes the commitment and focus on
+                            achieving
+                            optimal outcomes in a particular context, such as fitness, sports, or any endeavor that
+                            requires
+                            dedicated effort.
+                        </p>
+                        <a href="https://time.com/4237126/13-ways-to-get-the-most-out-of-your-workout-according-to-research/">
+                            Get A Quote
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>{% endblock %}
+<!-- end result section -->
+
+
+{% block contact_section %}
+    <section class="contact_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+          <span>
+            Get In Touch
+          </span>
+                </h2>
+            </div>
+            <div class="layout_padding2-top">
+                <div class="row">
+                    <div class="col-md-6">
+                        <form action="" method="post">
+                            {% csrf_token %}
+                            <div class="contact_form-container">
+                                <div>
+                                    <div>
+                                        <input type="text" name="name" placeholder="Name" required>
+                                    </div>
+                                    <div>
+                                        <input type="email" name="email" placeholder="Email" required>
+                                    </div>
+                                    <div>
+                                        <input type="text" name="phone" placeholder="Phone Number" required>
+                                    </div>
+                                    <div class="mt-5">
+                                        <textarea name="message" placeholder="Message" required></textarea>
+                                    </div>
+                                    <div class="mt-5">
+                                        <button type="submit">
+                                            Send
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map_container">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/place/PDP+Academy/@41.3264751,69.2284847,15z/data=!4m2!3m1!1s0x0:0xf9e01b5d45fc68cd?sa=X&ved=2ahUKEwionvqo7NT_AhUBVPEDHbQCC9QQ_BJ6BAhcEAg"
+                                        width="600" height="300" frameborder="0"
+                                        style="border:0; width: 100%; height:100%" allowfullscreen=""></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>{% endblock %}
+
+
+</html>
+
+
+<!-- contact section -->
+{#{% block contact_section %}#}
+{#    <section class="contact_section layout_padding">#}
+{#        <div class="container">#}
+{#            <div class="heading_container">#}
+{#                <h2>#}
+{#          <span>#}
+{#            Get In Touch#}
+{#          </span>#}
+{#                </h2>#}
+{#            </div>#}
+{#            {% for object in objects %}#}
+{#            <div class="layout_padding2-top">#}
+{#                <div class="row">#}
+{#                    <div class="col-md-6 ">#}
+{#                        <form action="{% url 'home' %}" method="post">#}
+{#                            {% csrf_token %}#}
+{#                            <div class="contact_form-container">#}
+{#                                <div>#}
+{#                                    <div>#}
+{#                                        <input name="name" type="text" placeholder="{{ object.name }}"/>#}
+{#                                    </div>#}
+{#                                    <div>#}
+{#                                        <input name="email" type="email" placeholder="{{ object.email }}"/>#}
+{#                                    </div>#}
+{#                                    <div>#}
+{#                                        <input name="phone" type="text" placeholder="{{ object.phone_number }}"/>#}
+{#                                    </div>#}
+{#                                    <div class="mt-5">#}
+{#                                        <input name="message" type="text" placeholder="{{ object.message }}"/>#}
+{#                                    </div>#}
+{#                                    <div class="mt-5">#}
+{#                                        <button type="submit">#}
+{#                                            Send#}
+{#                                        </button>#}
+{#                                    </div>#}
+{#                                </div>#}
+{#                            </div>#}
+{#                        </form>#}
+{#                    </div>#}
+{#                    <div class="col-md-6">#}
+{#                        <div class="map_container">#}
+{#                            <div class="map-responsive">#}
+{#                                <iframe#}
+{#                                        src="https://www.google.com/maps/place/PDP+Academy/@41.3264751,69.2284847,15z/data=!4m2!3m1!1s0x0:0xf9e01b5d45fc68cd?sa=X&ved=2ahUKEwionvqo7NT_AhUBVPEDHbQCC9QQ_BJ6BAhcEAg"#}
+{#                                        width="600" height="300" frameborder="0"#}
+{#                                        style="border:0; width: 100%; height:100%"#}
+{#                                        allowfullscreen></iframe>#}
+{#                            </div>#}
+{#                        </div>#}
+{#                    </div>#}
+{#                </div>#}
+{#            </div>#}
+{#            {% endfor %}#}
+{#        </div>#}
+{#    </section>{% endblock %}#}
+<!-- end contact section -->
+

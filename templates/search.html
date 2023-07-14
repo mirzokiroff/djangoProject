@@ -1,0 +1,56 @@
+{#{% block content %}#}
+{#  <h2>Search Results</h2>#}
+{#  {% if results %}#}
+{#    <ul>#}
+{#      {% for data in data %}#}
+{#        <li>{{ data }}</li>#}
+{#      {% endfor %}#}
+{#    </ul>#}
+{#  {% else %}#}
+{#    <p>No results found.</p>#}
+{#  {% endif %}#}
+{#{% endblock %}#}
+{##}
+{##}
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Search Results</title>
+    <style>
+        /* CSS ushbu qismida joylashtirilishi mumkin */
+        /* Misol uchun: sarlavha ko'rinishi, ro'yxat shakli, xatolik habari stili */
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Search Results</h1>
+
+    {% if results %}
+        <ul>
+            {% for result in results %}
+                <li>{{ result }}</li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p class="error-message">No results found.</p>
+    {% endif %}
+</body>
+</html>
+
+
