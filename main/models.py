@@ -48,5 +48,3 @@ class CrossfitTraining(models.Model):
     photo = models.ImageField(upload_to='image')
     link = models.URLField()
     created_at = models.DateTimeField(auto_now_add=True)
-
-

@@ -65,7 +65,6 @@ body {
 /*header section*/
 .hero_area {
   height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(rgba(255, 255, 255, 0))), url(../images/hero-bg.jpg);
   background: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -104,7 +103,7 @@ body {
 }
 
 .custom_nav-container .contact_nav .nav-item .nav-link {
-  padding: 0px 25px;
+  padding: 0 25px;
   color: #000000;
   text-align: center;
 }
@@ -258,7 +257,6 @@ a:focus {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: 35px;
   margin: 35px -5px 0 -5px;
 }
 

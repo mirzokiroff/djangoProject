@@ -128,7 +128,7 @@ def login(request):
             return redirect('/')
         else:
             print('Username or password not found')
-            return redirect('login')
+            return redirect('index')
 
     return render(request, "login.html")
 
